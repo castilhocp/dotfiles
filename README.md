@@ -32,6 +32,6 @@ It's simple, keep calm and I will lead you through the install process in an alm
 
 # License #
 
-You're free to use all the information in this repository in any way you please, provided you never mistreat a puppy for this moment on. Really, never. 
+You're free to use all the information in this repository in any way you please, provided you never mistreat a puppy from this moment on. Nevermore. Seriously.
 
 I'm watching ya.
