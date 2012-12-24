@@ -52,6 +52,12 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title			" muda título do terminal
 set visualbell			" não apita
 set noerrorbells		" NÃO APITA
+set visualbell			" NÃO PISCA (ô coisa chata!)
+set t_vb=
+if has('autocmd')
+	autocmd GUIEnter * set visualbell t_vb=
+	autocmd vimenter * set visualbell t_vb=
+endif
 
 " --------------------------------------------------------------------
 " Plugins  para tipo de arquivo
@@ -120,4 +126,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 				" o NERDTree
 
 map <F2> :NERDTreeToggle<CR>
-
