@@ -62,6 +62,7 @@ endif
 " --------------------------------------------------------------------
 " Plugins  para tipo de arquivo
 filetype plugin indent on
+filetype plugin on
 
 " --------------------------------------------------------------------
 " Esquema de cor: mustang 
@@ -90,6 +91,16 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" -------------------------------------------------------------------
+"  Para movimentar linhas para cima e para baixo com alt
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
 
 " -------------------------------------------------------------------
 " Facilidade para andar por janelas, adeus Ctrl-W
